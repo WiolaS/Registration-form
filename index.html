@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Formularz rejestracyjny">
+	<title>Registration form</title>
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	<div id="container">
+		<section>
+			<form action="#" method="post" autocomplete="off">
+			
+				<h1>Formularz rejestracyjny</h1>
+			
+				<div class="row">
+					<label for="firstName">Imię</label>
+					<input id="firstName" type="text" required autofocus="true" maxlength="26" pattern="[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż]{1,26}">
+				</div>
+				
+				<div class="row">
+					<label for="lastName">Nazwisko</label>
+					<input id="lastName" type="text" required maxlength="26" pattern="[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż]{1,26}">
+				</div>
+				
+				<div class="row">
+					<label for="email">E-mail</label>
+					<input id="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+				</div>
+				
+				<div class="row">
+					<label for="phone">Telefon</label>
+					<input id="phone" type="text" required pattern="^\d{9}">
+				</div>
+				
+				<div class="row">
+					<input type="submit" value="Zatwierdź">
+				</div>
+				
+			</form>
+		</section>
+	</div>
+</body>
+</html>
+
